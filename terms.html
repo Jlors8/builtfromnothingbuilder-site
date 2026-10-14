@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BuiltFromNothingBuilder — Terms of Service</title>
+<style>
+:root {
+  --bg: #f3f4f7; --surface: #ffffff; --surface-2: #eceef2;
+  --ink: #1d2330; --ink-muted: #5b6472; --border: #dde1e8;
+  --accent: #35507c; --accent-soft: #e9eef5;
+  --font-display: 'Georgia', serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171d; --surface: #1b1f27; --surface-2: #222733;
+    --ink: #e7e9ee; --ink-muted: #949cab; --border: #2c3340;
+    --accent: #8fb0dd; --accent-soft: #1d2735;
+  }
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); padding: 0 16px; padding-block: 40px; margin: 0; line-height: 1.6; }
+.sheet { max-width: 680px; margin: 0 auto; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 40px clamp(20px, 5vw, 56px); }
+.letterhead { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; border-bottom: 2px solid var(--ink); padding-bottom: 18px; margin-bottom: 28px; }
+.letterhead .name { font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; margin: 0; }
+.letterhead .doctype { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); margin-top: 4px; }
+.docmeta { text-align: right; font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-muted); line-height: 1.5; white-space: nowrap; }
+h1 { font-family: var(--font-display); font-size: clamp(1.6rem, 5vw, 2rem); margin: 0 0 6px; }
+.sub { color: var(--ink-muted); font-size: 0.95rem; margin: 0 0 32px; }
+h2 { font-family: var(--font-display); font-size: 1.08rem; font-weight: 600; margin: 2.2rem 0 0.7rem; display: flex; gap: 10px; align-items: baseline; }
+h2 .clause { font-family: var(--font-mono); color: var(--accent); font-size: 0.85rem; font-weight: 500; flex-shrink: 0; }
+p { margin: 0 0 1rem; max-width: 62ch; }
+.callout { background: var(--accent-soft); border: 1px solid var(--border); border-radius: 6px; padding: 14px 18px; font-size: 0.92rem; color: var(--ink); margin: 1.5rem 0; }
+.callout strong { color: var(--accent); }
+footer { margin-top: 2.5rem; padding-top: 1.2rem; border-top: 1px solid var(--border); font-size: 0.85rem; color: var(--ink-muted); }
+.contact-line { font-family: var(--font-mono); font-size: 0.92rem; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="letterhead">
+    <div>
+      <p class="name">BuiltFromNothingBuilder</p>
+      <p class="doctype">Developer application &middot; TikTok Content Posting API client</p>
+    </div>
+    <div class="docmeta">
+      Doc. BFNB-TOS-01<br>
+      Effective Oct 14, 2026
+    </div>
+  </div>
+
+  <h1>Terms of Service</h1>
+  <p class="sub">These terms cover the BuiltFromNothingBuilder application and its use of TikTok's Content Posting API.</p>
+
+  <h2><span class="clause">&sect;1</span> What this application is</h2>
+  <p>BuiltFromNothingBuilder is a personal, single-operator application. It generates short AI-made construction-timelapse videos and posts them to one TikTok account, which the developer owns and operates. It is not offered as a service to the public and does not accept sign-ups from other TikTok users.</p>
+
+  <h2><span class="clause">&sect;2</span> Scope of use</h2>
+  <p>The application acts only on the developer's own authorized TikTok account, using the <code>video.publish</code> scope granted through TikTok's OAuth flow. It does not act on behalf of, or access data belonging to, any other TikTok account or user.</p>
+
+  <h2><span class="clause">&sect;3</span> Content and disclosure</h2>
+  <p>Every video posted by this application is generated with AI tools, start to finish. Each post is labeled as AI-generated content using TikTok's <code>is_aigc</code> disclosure flag at the time of publishing, in line with TikTok's policy on synthetic media.</p>
+
+  <h2><span class="clause">&sect;4</span> Acceptable use</h2>
+  <p>This application is operated in line with TikTok's Developer Terms of Service, Community Guidelines, and Content Posting API policies, including restrictions on posting frequency, content originality, and required disclosures.</p>
+
+  <h2><span class="clause">&sect;5</span> No warranty</h2>
+  <p>The application is provided as-is, without warranty of any kind. The developer does not guarantee uninterrupted operation, specific posting outcomes, or that any video will remain available on TikTok once posted.</p>
+
+  <h2><span class="clause">&sect;6</span> Limitation of liability</h2>
+  <p>To the extent permitted by law, the developer is not liable for any indirect, incidental, or consequential loss arising from use of this application, including loss of account access, content, or anticipated earnings.</p>
+
+  <h2><span class="clause">&sect;7</span> Changes</h2>
+  <p>These terms may be updated as the application's scope changes. The effective date above reflects the most recent revision.</p>
+
+  <div class="callout">
+    <strong>In plain terms:</strong> this is a hobby project run by one person, posting their own AI-generated videos to their own account. It isn't a multi-user platform, and these terms exist mainly to satisfy TikTok's developer registration requirements honestly.
+  </div>
+
+  <h2><span class="clause">&sect;8</span> Contact</h2>
+  <p>Questions about this application or these terms can be sent to the address below.</p>
+  <p class="contact-line">lloran72@gmail.com</p>
+
+  <footer>BuiltFromNothingBuilder &middot; a personal TikTok Content Posting API client &middot; last updated Oct 14, 2026</footer>
+</div>
+</body>
+</html>

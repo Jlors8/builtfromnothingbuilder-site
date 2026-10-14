@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BuiltFromNothingBuilder — Privacy Policy</title>
+<style>
+:root {
+  --bg: #f3f4f7; --surface: #ffffff; --surface-2: #eceef2;
+  --ink: #1d2330; --ink-muted: #5b6472; --border: #dde1e8;
+  --accent: #35507c; --accent-soft: #e9eef5;
+  --font-display: 'Georgia', serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171d; --surface: #1b1f27; --surface-2: #222733;
+    --ink: #e7e9ee; --ink-muted: #949cab; --border: #2c3340;
+    --accent: #8fb0dd; --accent-soft: #1d2735;
+  }
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); padding: 0 16px; padding-block: 40px; margin: 0; line-height: 1.6; }
+.sheet { max-width: 680px; margin: 0 auto; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 40px clamp(20px, 5vw, 56px); }
+.letterhead { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; border-bottom: 2px solid var(--ink); padding-bottom: 18px; margin-bottom: 28px; }
+.letterhead .name { font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; margin: 0; }
+.letterhead .doctype { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); margin-top: 4px; }
+.docmeta { text-align: right; font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-muted); line-height: 1.5; white-space: nowrap; }
+h1 { font-family: var(--font-display); font-size: clamp(1.6rem, 5vw, 2rem); margin: 0 0 6px; }
+.sub { color: var(--ink-muted); font-size: 0.95rem; margin: 0 0 32px; }
+h2 { font-family: var(--font-display); font-size: 1.08rem; font-weight: 600; margin: 2.2rem 0 0.7rem; display: flex; gap: 10px; align-items: baseline; }
+h2 .clause { font-family: var(--font-mono); color: var(--accent); font-size: 0.85rem; font-weight: 500; flex-shrink: 0; }
+p { margin: 0 0 1rem; max-width: 62ch; }
+ul { margin: 0 0 1rem; padding-left: 1.3rem; }
+li { margin-bottom: 0.4rem; max-width: 60ch; }
+table { border-collapse: collapse; width: 100%; margin: 0.5rem 0 1.2rem; font-size: 0.92rem; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-muted); }
+.callout { background: var(--accent-soft); border: 1px solid var(--border); border-radius: 6px; padding: 14px 18px; font-size: 0.92rem; color: var(--ink); margin: 1.5rem 0; }
+.callout strong { color: var(--accent); }
+footer { margin-top: 2.5rem; padding-top: 1.2rem; border-top: 1px solid var(--border); font-size: 0.85rem; color: var(--ink-muted); }
+.contact-line { font-family: var(--font-mono); font-size: 0.92rem; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="letterhead">
+    <div>
+      <p class="name">BuiltFromNothingBuilder</p>
+      <p class="doctype">Developer application &middot; TikTok Content Posting API client</p>
+    </div>
+    <div class="docmeta">
+      Doc. BFNB-PRIV-01<br>
+      Effective Oct 14, 2026
+    </div>
+  </div>
+
+  <h1>Privacy Policy</h1>
+  <p class="sub">What the BuiltFromNothingBuilder application accesses, and what it does not.</p>
+
+  <h2><span class="clause">&sect;1</span> Overview</h2>
+  <p>BuiltFromNothingBuilder is a single-operator application. It is not a public service: it does not have end users other than its developer, does not run a website that visitors sign into, and does not collect information from anyone other than its own operator.</p>
+
+  <h2><span class="clause">&sect;2</span> What this application accesses</h2>
+  <table>
+    <thead><tr><th>Data</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>A TikTok OAuth access token and refresh token, scoped to <code>video.publish</code></td><td>Lets the application post videos to the developer's own authorized TikTok account</td></tr>
+      <tr><td>The developer's TikTok Open ID</td><td>Identifies which account a token belongs to, as returned by TikTok's own OAuth flow</td></tr>
+    </tbody>
+  </table>
+
+  <h2><span class="clause">&sect;3</span> What this application does not do</h2>
+  <ul>
+    <li>Does not collect information from any TikTok user other than its own developer-operator</li>
+    <li>Does not use cookies, analytics, or tracking — there is no web frontend for anyone to visit</li>
+    <li>Does not sell, rent, or share any data with third parties</li>
+    <li>Does not access TikTok direct messages, follower lists, or any data outside the <code>video.publish</code> scope</li>
+  </ul>
+
+  <h2><span class="clause">&sect;4</span> Storage and retention</h2>
+  <p>Tokens are stored locally, in a file on the developer's own computer, for as long as the application is in use. They are never transmitted anywhere except directly to TikTok's own API. Revoking the application's access from TikTok's account settings, or deleting that local file, removes the application's ability to post immediately.</p>
+
+  <h2><span class="clause">&sect;5</span> Children's privacy</h2>
+  <p>This application is not directed at children and is not intended to collect information from anyone. It is a single-operator tool operated by its developer only.</p>
+
+  <div class="callout">
+    <strong>In plain terms:</strong> the only "data" this application handles is its own developer's login tokens, kept on the developer's own machine, used only to post the developer's own videos. There's no database of other people's information anywhere in it.
+  </div>
+
+  <h2><span class="clause">&sect;6</span> Changes to this policy</h2>
+  <p>This policy may be updated if the application's scope changes. The effective date above reflects the most recent revision.</p>
+
+  <h2><span class="clause">&sect;7</span> Contact</h2>
+  <p>Questions about this policy can be sent to the address below.</p>
+  <p class="contact-line">lloran72@gmail.com</p>
+
+  <footer>BuiltFromNothingBuilder &middot; a personal TikTok Content Posting API client &middot; last updated Oct 14, 2026</footer>
+</div>
+</body>
+</html>
